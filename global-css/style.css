@@ -1,0 +1,141 @@
+/* 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+ */
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--dark-bg);
+    color: var(--dark-text2);
+    /* font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; */
+    font-family: var(--font-inter); 
+} 
+h1, h2, h3{
+    margin-top: 0;
+}
+
+
+a, a:visited , a:active{
+    text-decoration: none;
+}
+
+
+:root{
+    /* Font Root */
+    --font-inter: "Inter", sans-serif
+
+    
+    /* Colour roots */
+    --lime-green: hsl(163, 72%, 41%);
+    --brightred: hsl(356, 69%, 56%);
+    --youtube: hsl(348, 97%, 39%);
+    --white-text: hsl(0, 0%, 100%);
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --instagram-start: hsl(37, 97%, 70%);
+    --instagram-end: hsl(329, 70%, 58%);
+    --toggle-bg-start: hsl(210, 78%, 56%);
+    --toggle-bg-end: hsl(146, 68%, 55%);
+    --toggle: hsl(230, 22%, 74%);
+    --dark-bg: hsl(230, 17%, 14%);
+    --dark-top-bg: hsl(232, 19%, 15%);
+    --dark-text1: hsl(228, 34%, 66%);
+    --dark-card: hsl(228, 28%, 20%);
+
+    --dark-text2: hsl(0, 0%, 100%);
+    --light-bg: hsl(0, 0%, 100%);
+    --light-top-bg: hsl(225, 100%, 98%);
+    --light-card: hsl(227, 47%, 96%);
+    --light-text1: hsl(228, 12%, 44%);
+    --light-text2: hsl(230, 17%, 14%);
+
+}
+/* Header/ title */
+.header{
+    
+    .header-title{
+
+    }
+
+    .header-toggle{
+
+    }
+}
+
+/* For Dark mode switcher */
+.toggle{
+    border: none;
+
+    input[type="radio"]{
+
+    }
+
+
+    .toggle-background{
+
+    }
+
+    .toggle-switcher{
+        background-color: black;
+    }
+
+    label{
+
+    }
+}
+
+
+
+
+
+@media screen and (min-width:950px){
+    h1{
+        font-size: 1.75rem;
+    }
+     .container{
+         padding:  1.5625rem;
+         max-width: 69.375rem; 
+        margin: 0 auto;
+        background-color: aqua;
+        
+    } 
+
+    /* Header/ title */
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    
+}
+
+@media screen and (max-width:949px)
+{
+    h1{
+    
+        font-size: 1.5rem;
+    }
+
+    .container{
+        padding:  1.5625rem; 
+        max-width: 69.375rem;
+        margin: 0 auto;
+        color: blue;
+    }
+}
