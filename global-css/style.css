@@ -1,14 +1,14 @@
-/* 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
+/*
+ <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900
 
 .inter-<uniquifier> {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-}
- */
+}  */
+ 
 
  
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
@@ -17,13 +17,12 @@
 body{
     padding: 0;
     margin: 0;
-    background-color: var(--dark-bg);
+    background-color: var(--dark-top-bg);
     color: var(--dark-text2);
-    /* font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal; */
-    font-family: var(--font-inter); 
+    font-style: normal;
 } 
 
 html{
@@ -31,6 +30,7 @@ html{
 }
 h1, h2, h3{
     margin-top: 0;
+    margin-bottom: 0;
     line-height: 1.1;
 }
 
@@ -76,6 +76,7 @@ a, a:visited , a:active{
 }
 /* Global Header/ title */
 .header{
+    
    
 /* 
     span{
@@ -101,10 +102,15 @@ a, a:visited , a:active{
     gap: 12px;
     grid-template-columns: 1fr 58px 1fr;
     grid-template-rows: repeat(2, 1fr);
+    row-gap: 2px;
+    margin: 0;
     
     
     label{
         cursor: pointer;
+        touch-action: none;
+        font-size: 14px;
+        align-self: center;
 
         &[for="dark"]{
             color: red;
@@ -117,6 +123,7 @@ a, a:visited , a:active{
             color: red;
             grid-column: 2/3;
             grid-row: 2/4;
+            align-self: start;
             justify-self: center;
             width: max-content;
         }
@@ -140,12 +147,15 @@ a, a:visited , a:active{
     
 
     input[type="radio"]{
+        box-sizing: border-box;
         opacity: 0;
         /* margin: 0; */
         height: 26px;
         cursor: pointer;
-        width: 20px;
+        width: 18px;
         margin: 0px -2px 0px -2px;
+
+   
     }
   
 
@@ -220,6 +230,9 @@ a, a:visited , a:active{
         margin-top: 36px;
         
     }
+
+    /* For Card Boxes*/
+    
     
 }
 
@@ -263,11 +276,27 @@ a, a:visited , a:active{
             display: none;
         }
     }
+
+    
 }
 
 @media screen and (max-width:481px){
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* margin-top: 36px; */
+        
+    }
 
     .toggle{
+        
+        grid-template-columns: 1fr 58px;
+        margin-top: 0;
+        margin-left: auto;
+
+        
         label{
             &[for="system"]{
                 display: none;
@@ -278,5 +307,7 @@ a, a:visited , a:active{
             display: none;
         }
     }
+
+    
     
 }

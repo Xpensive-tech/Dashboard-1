@@ -1,0 +1,63 @@
+.container-1{
+    background-color: var(--dark-bg);
+
+}
+.card-wrapper{
+    margin: 0 auto 46px;
+    max-width: 69.375rem; 
+    padding:  1.5625rem;
+    border: 10px;
+.card{
+    background-color: var(--dark-card);
+    padding: 20px;
+
+
+    .icon{
+        .facebook{
+
+        }
+
+        .twitter{
+            
+        }
+
+        .instagram{
+            
+        }
+
+        .youtube{
+            
+        }
+
+        .username{
+
+        }
+
+    }
+    .card-count{
+
+        .count-big{
+            
+        }
+        .count-small{
+
+        }
+
+       
+    }
+
+    .card-label{
+
+    }
+
+    .card-status{
+        .card-up{
+
+        }
+        .card-dowm{
+
+        }
+    }
+}
+
+}
