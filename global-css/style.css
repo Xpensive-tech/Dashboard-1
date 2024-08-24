@@ -204,7 +204,14 @@ a, a:visited , a:active{
 
 
 
-/* For small screen laptops and wide screens */
+/**
+** For small screen laptops and wide screens 
+*! No Universal style should be added @mediaquery
+
+*TODO Set the grid layout for section 1 on the desktop
+
+* @container
+*/
 
 @media screen and (min-width:769px){
 
