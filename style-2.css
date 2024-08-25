@@ -10,55 +10,80 @@
     border: 10px;
 .card{
     background-color: var(--dark-card);
-    padding: 20px;
-    margin:;
+    padding: 25px;
+    width: 250px;
+    text-align: center;
+    color: var(--dark-text1);
 
+
+
+    .card-platform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
 
     .icon{
-        .facebook{
-
-        }
-
-        .twitter{
-            
-        }
-
-        .instagram{
-            
-        }
-
-        .youtube{
-            
-        }
-
-        .username{
-
-        }
-
+       margin-right: 8px;
     }
+
+    .username{
+        font-weight: 700;
+        font-size: 12px;
+    }
+}
     .card-count{
 
+       
+
         .count-big{
-            
+            font-size: 56px;
+            letter-spacing: -2px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            line-height: 1;
+            color: var(--white-text);
         }
         .count-small{
 
         }
 
+        .count-label{
+            color: var(--dark-text1);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 25px;
+        }
+
        
     }
 
-    .card-label{
-
-    }
+    
 
     .card-status{
-        .card-up{
+        font-size: 12px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        img{
+            width: 10px;
+            height: 5px;
+        }
+
+        .up-status{
+            color: var(--l-green);
 
         }
-        .card-dowm{
-
+        .down-status{
+            color: var(--bright-red)
         }
+       
     }
 }
 

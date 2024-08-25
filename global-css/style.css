@@ -45,9 +45,9 @@ a, a:visited , a:active{
     --font-inter: "Inter", sans-serif
 
     
-    /* Colour roots */
-    --lime-green: hsl(163, 72%, 41%);
-    --brightred: hsl(356, 69%, 56%);
+    /* Color roots */
+    /* --lime-green:  hsl(163, 72%, 41%); */
+    --bright-red: hsl(356, 69%, 56%);
     --youtube: hsl(348, 97%, 39%);
     --white-text: hsl(0, 0%, 100%);
     --Facebook: hsl(208, 92%, 53%);
@@ -61,6 +61,8 @@ a, a:visited , a:active{
     --dark-top-bg: hsl(232, 19%, 15%);
     --dark-text1: hsl(228, 34%, 66%);
     --dark-card: hsl(228, 28%, 20%);
+    --l-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
 
     --dark-text2: hsl(0, 0%, 100%);
     --light-bg: hsl(0, 0%, 100%);
